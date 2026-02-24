@@ -1,2 +1,1 @@
 # dpb-remote-assets
-dpb
