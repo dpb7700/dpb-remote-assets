@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "version": 1,
+  "files": [
+    { "id": "basededonnee2", "kind": "txt", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/basededonnee2.txt" },
+    { "id": "baseAlt", "kind": "csv", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/BaseAlt.csv" },
+    { "id": "alps", "kind": "txt", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/Alps.txt" },
+    { "id": "baseptreport", "kind": "txt", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/baseptreport.txt" },
+    { "id": "baseresto", "kind": "txt", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/baseresto.txt" },
+    { "id": "proc", "kind": "txt", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/proc.txt" },
+    { "id": "pyr", "kind": "txt", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/Pyr.txt" },
+
+    { "id": "openaip_airspaces", "kind": "geojson", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/openaip-airspaces.geojson" },
+    { "id": "airspaces66", "kind": "geojson", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/airspaces66.geojson" },
+
+    { "id": "master3_mbtiles", "kind": "mbtiles", "compression": "zip",
+      "url": "https://github.com/<user>/<repo>/releases/latest/download/master3.mbtiles.zip",
+      "destinationFilename": "master3.mbtiles"
+    },
+    { "id": "master4_mbtiles", "kind": "mbtiles", "compression": "zip",
+      "url": "https://github.com/<user>/<repo>/releases/latest/download/master4.mbtiles.zip",
+      "destinationFilename": "master4.mbtiles"
+    },
+    { "id": "master5_mbtiles", "kind": "mbtiles", "compression": "zip",
+      "url": "https://github.com/<user>/<repo>/releases/latest/download/master5.mbtiles.zip",
+      "destinationFilename": "master5.mbtiles"
+    },
+
+    { "id": "complement_cartes_vfr", "kind": "pdf", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/docs/Complement-aux-cartes-VFR.pdf" },
+    { "id": "fiche_signaux", "kind": "pdf", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/docs/Fiche-signaux-lumineux.pdf" },
+    { "id": "guide_aeroweb", "kind": "pdf", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/docs/Guide-AEROWEB.pdf" },
+    { "id": "liste_zones_prd", "kind": "pdf", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/docs/Liste-des-zones-P-R-et-D.pdf" },
+    { "id": "memo_pilote_vfr", "kind": "pdf", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/docs/Memo-du-pilote-VFR.pdf" },
+
+    { "id": "radar_csv", "kind": "csv", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/radar.csv" },
+    { "id": "zone_txt", "kind": "txt", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/zone.txt" },
+
+    { "id": "notice_app", "kind": "pdf", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/docs/Notice-d-utilisation-de-deltaPhibis.pdf" },
+
+    { "id": "airports_geojson", "kind": "geojson", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/airports.geojson" },
+    { "id": "report_point_geojson", "kind": "geojson", "url": "https://raw.githubusercontent.com/<user>/<repo>/main/data/report-point.geojson" }
+  ],
+
+  "endpoints": {
+    "meteoFrance_sigwx": "https://aviation.meteo.fr/FR/aviation/affiche_image.php?login={{login}}&layer=sigwx/fr/france&echeance={{echeance}}",
+    "meteoFrance_wintemp_fl020": "https://aviation.meteo.fr/FR/aviation/affiche_image.php?login={{login}}&layer=wintemp/fr/france/fl020&echeance={{echeance}}",
+
+    "sia_lf_sup": "https://www.sia.aviation-civile.gouv.fr/media/store/documents/file/l/f/lf_sup_{{id}}_fr.pdf",
+    "sia_lf_sup_a": "https://www.sia.aviation-civile.gouv.fr/media/store/documents/file/l/f/lf_sup_a_{{id}}_fr.pdf",
+
+    "basulm_pdf": "https://basulm.ffplum.fr/PDF/{{ref}}.pdf",
+
+    "eaip_vac_ad2": "https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_{{cycle}}/Atlas-VAC/PDF_AIPparSSection/VAC/AD/AD-2.{{icao}}.pdf",
+
+    "app_store": "https://apps.apple.com/fr/app/deltaphibis/id1629452923",
+
+    "aviationweather_metar": "https://aviationweather.gov/api/data/metar?ids={{ids}}&taf=false&format=raw",
+    "aviationweather_taf": "https://aviationweather.gov/api/data/taf?ids={{ids}}&format=raw",
+
+    "notaminfo_latest": "https://notaminfo.com/latest?country={{country}}",
+
+    "open_meteo_forecast": "https://api.open-meteo.com/v1/forecast?latitude={{lat}}&longitude={{lon}}&hourly={{hourly}}&forecast_days=1",
+
+    "ogimet_gramet": "https://www.ogimet.com/display_gramet.php{{query}}",
+    "meteociel_fronts": "https://www.meteociel.fr/cartes_obs/cartes/front24.png",
+    "meteociel_analyse": "https://www.meteociel.fr/cartes_obs/cartes/analyse-{{hh}}.png",
+    "ogimet_home": "https://www.ogimet.com"
+  }
+}
